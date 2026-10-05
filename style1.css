@@ -1,0 +1,80 @@
+/* STREAMING_CHUNK:Styling photo slider component with arrows
+.slider-container {
+position: relative;
+width: 320px;
+max-width: 100%;
+margin: 20px 0;
+border: 1px solid #ccc;
+background: #f9f9f9;
+padding: 10px;
+}
+
+.slider {
+display: flex;
+aspect-ratio: 16 / 9;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.slider::-webkit-scrollbar {
+display: none;
+}
+
+.slider {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+.slide {
+flex: 0 0 100%;
+scroll-snap-align: start;
+position: relative;
+background: #eee;
+text-align: center;
+}
+
+.slide img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.slide-caption {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.6);
+color: white;
+margin: 0;
+padding: 5px;
+font-size: 14px;
+}
+
+.slider-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+padding: 8px 12px;
+cursor: pointer;
+font-size: 14px;
+border-radius: 3px;
+z-index: 10;
+}
+
+.slider-btn:hover {
+background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+left: 15px;
+}
+
+.next-btn {
+right: 15px;
+} */

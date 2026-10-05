@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jelajahi makanan tradisional Nusantara bersama Jelajah Rasa.">
+    <title>Jelajah Rasa - Kuliner Nusantara</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- NAVBAR: menu di bagian atas yang mengarah ke bagian-bagian pada halaman ini. -->
+    <header class="navbar">
+        <a class="logo" href="#beranda" aria-label="Jelajah Rasa, ke beranda">
+            <span class="logo-mark" aria-hidden="true">JR</span>
+            <span>
+                <strong>Jelajah Rasa</strong>
+                <small>Kuliner khas Nusantara</small>
+            </span>
+        </a>
+
+        <nav aria-label="Navigasi utama">
+            <a href="#beranda" class="active">Beranda</a>
+            <a href="#resep">Resep</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BERANDA: ucapan selamat datang dan pengenalan singkat website. -->
+        <section id="beranda" class="hero section-shell">
+            <div class="hero-text">
+                <p class="eyebrow">Cerita rasa dari seluruh Indonesia</p>
+                <h1>Selamat datang di <span>Jelajah Rasa</span></h1>
+                <p>
+                    Kenali kembali makanan tradisional Nusantara yang kaya cerita,
+                    bahan lokal, dan cita rasa. Yuk, ikut menjaga warisan kuliner
+                    agar tetap dikenal generasi berikutnya.
+                </p>
+                <a href="#resep" class="btn">Jelajahi kuliner <span aria-hidden="true">→</span></a>
+                <p class="hero-note">
+                    Website ini dibuat oleh <strong>Syakira Fatmi Azam Cantik</strong>
+                    untuk memperkenalkan dan melestarikan makanan khas daerah.
+                </p>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <span class="hero-stamp">Rasa<br>Nusantara</span>
+                <span class="hero-leaf leaf-one">✳</span>
+                <span class="hero-leaf leaf-two">✳</span>
+                <div class="hero-plate">
+                    <div class="plate-food">🍚</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDER: menampilkan satu foto kuliner setiap kali; tombol panah/titik dipakai untuk berpindah foto. -->
+        <section class="slider-section section-shell" aria-labelledby="slider-heading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Dari dapur ke cerita</p>
+                    <h2 id="slider-heading">Jelajah Kuliner Nusantara</h2>
+                </div>
+                <p class="section-desc">Sepuluh inspirasi sajian yang mengingatkan kita pada kayanya kuliner Indonesia.</p>
+            </div>
+
+            <div class="slider" id="slider" aria-roledescription="carousel" aria-label="Foto kuliner Nusantara">
+                <!-- Setiap elemen article adalah satu foto. Urutan dan nama makanannya mengikuti daftar kuliner. -->
+                <div class="slider-track">
+                    <article class="slide" aria-roledescription="slide" aria-label="1 dari 10">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Aneka hidangan tersaji di atas meja" fetchpriority="high">
+                        <div class="slide-caption"><span>01 / 10</span><h3>Grontol</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="2 dari 10">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Sajian sayur dan bahan segar berwarna-warni" loading="lazy">
+                        <div class="slide-caption"><span>02 / 10</span><h3>Clorot</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="3 dari 10">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Semangkuk sajian dengan beragam bahan" loading="lazy">
+                        <div class="slide-caption"><span>03 / 10</span><h3>Dodongkal</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="4 dari 10">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Hidangan panggang dengan pelengkap" loading="lazy">
+                        <div class="slide-caption"><span>04 / 10</span><h3>Lompong Sagu</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="5 dari 10">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Sajian dengan aneka topping" loading="lazy">
+                        <div class="slide-caption"><span>05 / 10</span><h3>Kue Rangi</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="6 dari 10">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Roti isi tersaji bersama pelengkap" loading="lazy">
+                        <div class="slide-caption"><span>06 / 10</span><h3>Sayur Babanci</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="7 dari 10">
+                        <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Semangkuk sajian berkuah" loading="lazy">
+                        <div class="slide-caption"><span>07 / 10</span><h3>Gulo Puan</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="8 dari 10">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Aneka sayuran dan bahan masakan" loading="lazy">
+                        <div class="slide-caption"><span>08 / 10</span><h3>Bassang</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="9 dari 10">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Hidangan sehat berisi sayuran segar" loading="lazy">
+                        <div class="slide-caption"><span>09 / 10</span><h3>Mie Lethek</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                    <article class="slide" aria-roledescription="slide" aria-label="10 dari 10">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Sajian makanan lengkap dengan aneka lauk" loading="lazy">
+                        <div class="slide-caption"><span>10 / 10</span><h3>Kue Putu</h3><p>Salah satu kuliner tradisional Nusantara.</p></div>
+                    </article>
+                </div>
+                <!-- Tombol ini dikendalikan oleh JavaScript di assets/js/script.js. -->
+                <button class="slider-btn prev" type="button" aria-label="Foto sebelumnya">←</button>
+                <button class="slider-btn next" type="button" aria-label="Foto berikutnya">→</button>
+            </div>
+            <!-- Titik navigasi dibuat otomatis oleh JavaScript; nomor di samping menunjukkan foto aktif. -->
+            <div class="slider-footer">
+                <div class="slider-dots" aria-label="Pilih foto"></div>
+                <p class="slide-indicator"><span id="currentIndex">1</span> <span aria-hidden="true">/</span> 10</p>
+            </div>
+        </section>
+
+        <!-- DAFTAR RESEP: klik kartu makanan untuk membuka bahan dan cara membuatnya. -->
+        <section id="resep" class="section-shell section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Warisan yang perlu dikenal</p>
+                    <h2>10 Makanan Tradisional Nusantara</h2>
+                </div>
+                <p class="section-desc">Kuliner tradisional pilihan yang layak terus dikenal dan diperkenalkan.</p>
+            </div>
+            <ul class="food-list">
+                <li><button class="food-item" type="button" data-recipe="0" aria-haspopup="dialog"><span>01</span><div><strong>Grontol</strong><small>Betawi</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="1" aria-haspopup="dialog"><span>02</span><div><strong>Clorot</strong><small>Purworejo, Jawa Tengah</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="2" aria-haspopup="dialog"><span>03</span><div><strong>Dodongkal</strong><small>Jawa Barat</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="3" aria-haspopup="dialog"><span>04</span><div><strong>Lompong Sagu</strong><small>Sumatera Barat</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="4" aria-haspopup="dialog"><span>05</span><div><strong>Kue Rangi</strong><small>Betawi, Jakarta</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="5" aria-haspopup="dialog"><span>06</span><div><strong>Sayur Babanci</strong><small>Betawi, Jakarta</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="6" aria-haspopup="dialog"><span>07</span><div><strong>Gulo Puan</strong><small>Palembang, Sumatera Selatan</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="7" aria-haspopup="dialog"><span>08</span><div><strong>Bassang</strong><small>Makassar, Sulawesi Selatan</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="8" aria-haspopup="dialog"><span>09</span><div><strong>Mie Lethek</strong><small>Bantul, DI Yogyakarta</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+                <li><button class="food-item" type="button" data-recipe="9" aria-haspopup="dialog"><span>10</span><div><strong>Kue Putu</strong><small>Jawa</small></div><span class="food-item-arrow" aria-hidden="true">↗</span></button></li>
+            </ul>
+        </section>
+
+        <!-- POP-UP RESEP: JavaScript mengisi judul, asal, bahan, dan langkah sesuai kartu yang dipilih. -->
+        <dialog class="recipe-dialog" aria-labelledby="recipe-title" aria-describedby="recipe-origin">
+            <div class="recipe-dialog-content">
+                <button class="dialog-close" type="button" aria-label="Tutup resep">×</button>
+                <p class="eyebrow">Resep tradisional</p>
+                <h2 id="recipe-title"></h2>
+                <p class="recipe-origin" id="recipe-origin"></p>
+                <p class="recipe-description" id="recipe-description"></p>
+                <div class="recipe-details">
+                    <div>
+                        <h3>Bahan</h3>
+                        <ul id="recipe-ingredients"></ul>
+                    </div>
+                    <div>
+                        <h3>Cara membuat</h3>
+                        <ol id="recipe-steps"></ol>
+                    </div>
+                </div>
+            </div>
+        </dialog>
+
+        <!-- LOKASI: setiap kartu membuka pencarian makanan tersebut di Google Maps. -->
+        <section id="lokasi" class="section-shell section location-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Temukan di sekitar</p>
+                    <h2>Lokasi kuliner</h2>
+                </div>
+                <p class="section-desc">Cari penjual atau tempat yang menyajikan makanan ini lewat Google Maps.</p>
+            </div>
+            <div class="location-grid">
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+grontol+Betawi" target="_blank" rel="noopener noreferrer"><span>01</span><strong>Grontol</strong><small>Betawi</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+clorot+Purworejo+Jawa+Tengah" target="_blank" rel="noopener noreferrer"><span>02</span><strong>Clorot</strong><small>Purworejo, Jawa Tengah</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+dodongkal+Jawa+Barat" target="_blank" rel="noopener noreferrer"><span>03</span><strong>Dodongkal</strong><small>Jawa Barat</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+lompong+sagu+Sumatera+Barat" target="_blank" rel="noopener noreferrer"><span>04</span><strong>Lompong Sagu</strong><small>Sumatera Barat</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+kue+rangi+Jakarta" target="_blank" rel="noopener noreferrer"><span>05</span><strong>Kue Rangi</strong><small>Betawi, Jakarta</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+sayur+babanci+Jakarta" target="_blank" rel="noopener noreferrer"><span>06</span><strong>Sayur Babanci</strong><small>Betawi, Jakarta</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+gulo+puan+Palembang" target="_blank" rel="noopener noreferrer"><span>07</span><strong>Gulo Puan</strong><small>Palembang, Sumatera Selatan</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+bassang+Makassar" target="_blank" rel="noopener noreferrer"><span>08</span><strong>Bassang</strong><small>Makassar, Sulawesi Selatan</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+mie+lethek+Bantul" target="_blank" rel="noopener noreferrer"><span>09</span><strong>Mie Lethek</strong><small>Bantul, DI Yogyakarta</small><span class="location-link">Cari di Maps ↗</span></a>
+                <a class="location-card" href="https://www.google.com/maps/search/?api=1&amp;query=penjual+kue+putu+Jawa" target="_blank" rel="noopener noreferrer"><span>10</span><strong>Kue Putu</strong><small>Jawa</small><span class="location-link">Cari di Maps ↗</span></a>
+            </div>
+        </section>
+
+        <!-- TENTANG: menjelaskan tujuan website Jelajah Rasa. -->
+        <section id="tentang" class="section-shell about-section">
+            <div>
+                <p class="eyebrow">Tujuan Jelajah Rasa</p>
+                <h2>Melestarikan rasa, merawat cerita.</h2>
+            </div>
+            <p>
+                Kami ingin memperkenalkan kuliner khas Nusantara kepada generasi muda
+                agar makanan tradisional tetap dikenal, dicintai, dan tidak terlupakan.
+                Setiap resep membawa cerita tentang bahan, kebiasaan, dan budaya daerah.
+            </p>
+        </section>
+
+        <!-- KONTAK: formulir untuk mengirim rekomendasi dan cerita kuliner dari pengunjung. -->
+        <section id="kontak" class="section-shell section contact">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Punya cerita kuliner?</p>
+                    <h2>Bagikan cerita kuliner daerahmu</h2>
+                </div>
+                <p class="section-desc">Kirim rekomendasi dan ceritamu. Setelah dikirim, pesan akan langsung tampil sebagai card di bawah.</p>
+            </div>
+            <form id="feedbackForm">
+                <div class="form-grid">
+                    <p>
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+                    </p>
+                    <p>
+                        <label for="makanan">Nama Makanan Daerah</label>
+                        <input type="text" id="makanan" name="makanan" placeholder="Contoh: Kue Rangi" required>
+                    </p>
+                    <p>
+                        <label for="kategori">Kategori Makanan</label>
+                        <select id="kategori" name="kategori" required>
+                            <option value="">-- Pilih Kategori --</option>
+                            <option value="berat">Makanan Berat</option>
+                            <option value="jajanan">Jajanan Pasar</option>
+                            <option value="minuman">Minuman Tradisional</option>
+                        </select>
+                    </p>
+                    <p class="form-message">
+                        <label for="pesan">Cerita / Lokasi Penjual</label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan detail tempat atau ceritanya di sini..." required></textarea>
+                    </p>
+                </div>
+                <button type="submit" class="btn">Kirim Cerita <span aria-hidden="true">→</span></button>
+            </form>
+
+            <!-- Card baru dari pengunjung akan ditambahkan di area ini oleh JavaScript. -->
+            <div class="feedback-area" aria-live="polite">
+                <h3>Cerita dari pengunjung</h3>
+                <p class="feedback-empty" id="feedbackEmpty">Belum ada cerita. Jadilah yang pertama berbagi!</p>
+                <div class="feedback-list" id="feedbackList"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER: informasi penutup dan hak cipta website. -->
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="#beranda">
+            <span class="logo-mark" aria-hidden="true">JR</span>
+            <span><strong>Jelajah Rasa</strong><small>Melestarikan cita rasa Nusantara</small></span>
+        </a>
+        <p><small>&copy; 2026 JelajahRasa by Syakira Fatmi Azam Cantik. All rights reserved.</small></p>
+    </footer>
+
+    <!-- Memuat JavaScript untuk mengatur slider dan pop-up resep. -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

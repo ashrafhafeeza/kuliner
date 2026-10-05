@@ -1,0 +1,248 @@
+<!-- <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajah Rasa - Kuliner Nusantara</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jelajah Rasa</h1>
+        <p><i>Memperkenalkan & Mempromosikan Kuliner Khas Nusantara</i></p>
+        <hr>
+        <!-- Menu Navigasi menggunakan Link -->
+        <nav>
+            <a href="#beranda">Beranda</a> | 
+            <a href="#resep">Resep</a> | 
+            <a href="#lokasi">Lokasi</a> | 
+            <a href="#tentang">Tentang</a> | 
+            <a href="#kontak">Kontak</a>
+        </nav>
+        <hr>
+    </header>
+
+    <section id="beranda">
+        <h2>Selamat Datang di Jelajah Rasa</h2>
+        <p>Website ini dibuat oleh <b>Syakira Falmi Azam</b> untuk melestarikan <strong>makanan tradisional Nusantara</strong> yang mulai langka akibat munculnya <em>westernisasi</em>.</p>
+    </section>
+
+    <section id="resep">
+        <h3>Daftar Makanan Tradisional Rare / Langka</h3>
+        <ul>
+            <li>1. Grontol</li>
+            <li>2. Clorot</li>
+            <li>3. Dodongkal</li>
+            <li>4. Lomppong Sagu</li>
+            <li>5. Kue Rangin</li>
+            <li>6. Sayur Babanci</li>
+            <li>7. Gulo Puan</li>
+            <li>8. Bassang</li>
+            <li>9. Mie Lethek</li>
+            <li>10. Kue Putu</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Dokumentasi Kuliner</h3>
+        
+        <!-- Slider Foto Otomatis & Klik Kanan-Kiri -->
+        <div class="slider-container">
+            <div class="slider" id="imageSlider">
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/8B4513/ffffff?text=1.+Grontol" alt="Grontol" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Grontol'">
+                    <p class="slide-caption">1. Grontol</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/D2B48C/ffffff?text=2.+Clorot" alt="Clorot" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Clorot'">
+                    <p class="slide-caption">2. Clorot</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/CD853F/ffffff?text=3.+Dodongkal" alt="Dodongkal" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Dodongkal'">
+                    <p class="slide-caption">3. Dodongkal</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/F4A460/ffffff?text=4.+Lomppong+Sagu" alt="Lomppong Sagu" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Lomppong+Sagu'">
+                    <p class="slide-caption">4. Lomppong Sagu</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/DEB887/ffffff?text=5.+Kue+Rangin" alt="Kue Rangin" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Kue+Rangin'">
+                    <p class="slide-caption">5. Kue Rangin</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/228B22/ffffff?text=6.+Sayur+Babanci" alt="Sayur Babanci" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Sayur+Babanci'">
+                    <p class="slide-caption">6. Sayur Babanci</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/800000/ffffff?text=7.+Gulo+Puan" alt="Gulo Puan" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Gulo+Puan'">
+                    <p class="slide-caption">7. Gulo Puan</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/4682B4/ffffff?text=8.+Bassang" alt="Bassang" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Bassang'">
+                    <p class="slide-caption">8. Bassang</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/A0522D/ffffff?text=9.+Mie+Lethek" alt="Mie Lethek" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Mie+Lethek'">
+                    <p class="slide-caption">9. Mie Lethek</p>
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/600x400/DAA520/ffffff?text=10.+Kue+Putu" alt="Kue Putu" onerror="this.src='https://placehold.co/600x400/ccc/333?text=Kue+Putu'">
+                    <p class="slide-caption">10. Kue Putu</p>
+                </div>
+            </div>
+
+            <!-- Tombol Navigasi Kiri & Kanan -->
+            <button class="slider-btn prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-btn next-btn" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Script untuk Slider Otomatis & Tombol Klik -->
+        <script>
+            let currentSlide = 0;
+            const slider = document.getElementById('imageSlider');
+            const totalSlides = slider.children.length;
+
+            function moveSlide(direction) {
+                currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+                slider.scrollTo({
+                    left: slider.clientWidth * currentSlide,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Slider otomatis berjalan setiap 3 detik
+            let autoSlide = setInterval(() => {
+                moveSlide(1);
+            }, 3000);
+
+            // Berhenti otomatis saat mouse berada di atas slider
+            slider.addEventListener('mouseenter', () => clearInterval(autoSlide));
+            slider.addEventListener('mouseleave', () => {
+                autoSlide = setInterval(() => {
+                    moveSlide(1);
+                }, 3000);
+            });
+        </script>
+    </section>
+
+    <section>
+        <h3>Tabel Resep Praktis Jajanan Jadul</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Makanan</th>
+                    <th>Asal Daerah</th>
+                    <th>Bahan Utama</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Grontol</td>
+                    <td>Jawa</td>
+                    <td>Jagung manis tua, kelapa parut, garam, gula</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Clorot</td>
+                    <td>Jawa Tengah</td>
+                    <td>Tepung beras, santan, gula merah</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dodongkal</td>
+                    <td>Jawa Barat / Betawi</td>
+                    <td>Tepung beras kasar, gula aren, kelapa parut</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lomppong Sagu</td>
+                    <td>Maluku</td>
+                    <td>Tepung sagu, pisang, santan, gula merah</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Kue Rangin</td>
+                    <td>Betawi / Jawa</td>
+                    <td>Tepung beras, kelapa parut, santan</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Sayur Babanci</td>
+                    <td>Betawi</td>
+                    <td>Daging sapi, kepala kelapa sangrai, air kelapa, bumbu rempah</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Gulo Puan</td>
+                    <td>Sumatera Selatan</td>
+                    <td>Susu kerbau, gula pasir</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Bassang</td>
+                    <td>Makassar</td>
+                    <td>Jagung ketan putih, terigu, santan, gula, garam</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Mie Lethek</td>
+                    <td>Bantul, Yogyakarta</td>
+                    <td>Tepoka/kanji, gaplek (singkong kering)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Kue Putu</td>
+                    <td>Jawa / Nusantara</td>
+                    <td>Tepung beras, gula jawa, kelapa parut, pandan</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="kontak">
+        <h3>Rekomendasikan Makanan Daerahmu</h3>
+        <form action="#" method="POST">
+            <p>
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu">
+            </p>
+
+            <p>
+                <label for="makanan">Nama Makanan Daerah:</label><br>
+                <input type="text" id="makanan" name="makanan" placeholder="Contoh: Kue Rangi">
+            </p>
+
+            <p>
+                <label for="kategori">Kategori Makanan:</label><br>
+                <!-- Select Option -->
+                <select id="kategori" name="kategori">
+                    <option value="">-- Pilih Kategori --</option>
+                    <option value="berat">Makanan Berat</option>
+                    <option value="jajanan">Jajanan Pasar</option>
+                    <option value="minuman">Minuman Tradisional</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="pesan">Cerita / Lokasi Penjual:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Tuliskan detail tempat atau ceritanya di sini..."></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Kirim Rekomendasi</button>
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <p><small>&copy; 2026 Jelajah Rasa - Proyek Website Sekolah</small></p>
+    </footer>
+
+</body>
+</html> -->
